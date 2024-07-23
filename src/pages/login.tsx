@@ -53,18 +53,20 @@ export const Login = () => {
 
   const handleLogin = async () => {
     setErrorLogin(""); 
+  
     if (correo === "admin" && contraseña === "admin") {
       router.push('/admin');
       return;
     }
-    
+  
     try {
-        await login(correo, contraseña);
-        router.push('/');
+      await login(correo, contraseña);
+      alert('Inicio de sesión exitoso');  // Mostrar mensaje de éxito
+      router.push('/');
     } catch (error) {
-        if (error instanceof Error) {
-            setErrorLogin(error.message);
-        }
+      if (error instanceof Error) {
+        setErrorLogin(error.message);
+      }
     }
   };
 

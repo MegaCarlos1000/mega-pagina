@@ -81,8 +81,8 @@ export const Admin = () => {
               <Link href="/modificar" passHref>
                 <Card.Img variant="top" src="https://static.vecteezy.com/system/resources/thumbnails/045/767/662/small_2x/leaf-letter-m-logo-icon-template-design-free-vector.jpg" />
                 </Link>
-                <Card.Body>
-                  <Card.Title>Card Title 2</Card.Title>
+                <Card.Body> 
+                  <Card.Title>Modificar</Card.Title>
                   <Card.Text>
                   modificar datos de registrar datos personales 
                   </Card.Text>
